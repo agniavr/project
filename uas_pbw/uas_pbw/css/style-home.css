@@ -1,0 +1,324 @@
+* {
+  box-sizing: border-box;
+}
+
+/* untuk index dan index-profile */
+
+body a {
+  text-decoration: none;
+  color: black;
+}
+.notice {
+  display: inline;
+}
+.notice a {
+  color: black;
+}
+.daftar-menu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 25px;
+  margin-bottom: 10px;
+}
+
+.daftar-menu .icon-menu a {
+  width: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.bagian-flash-sale {
+  background-color: #198754;
+  border-radius: 15px;
+  height: 300px;
+}
+
+.bagian-flash-sale .daftar-menu .menu-flash-sale a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 5px;
+  border: 3px solid white;
+  border-radius: 10px;
+}
+
+.bagian-flash-sale .daftar-menu .menu-flash-sale .harga-barang {
+  color: white;
+}
+
+.bagian-flash-sale .daftar-menu .menu-flash-sale .bar {
+  height: 25px;
+  background-color: #fff;
+  border-radius: 7px;
+  width: 140px;
+}
+.bagian-flash-sale .daftar-menu .menu-flash-sale .bar .sedia-barang {
+  background-color: #ec6c02;
+  border-radius: 7px;
+  display: inline-block;
+  height: 25px;
+  width: 90%;
+  text-align: center;
+}
+
+.fls-sale {
+  margin-left: 60px;
+}
+
+.fls-sale .ganti {
+  display: inline;
+  color: white;
+  font-size: 20px;
+}
+
+.fls-sale .lihat {
+  display: inline;
+  color: white;
+  font-size: 10px;
+}
+
+
+#searching {
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  width: 433px;
+  display: block;
+  border-radius: 2px;
+  /* z-indexnya diganti waktu diklik */
+}
+
+.overlay {
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.685);
+  z-index: 9998;
+  transition: 0.8s;
+  text-align: center;
+  padding: 100px;
+  display: none;
+}
+
+/*#input-search z-indexnya diganti waktu diklik */
+
+/* untuk index-profile saja */
+
+/* untuk transmigrasi profile-picture */
+
+#check {
+  display: none;
+}
+
+#sidebar {
+  position: relative;
+  display: inline-block;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 345px;
+  background-color: rgba(16, 150, 80, 0.9);
+  transition: 0.3s;
+  z-index: 5090;
+}
+
+#sidebar .fp {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  position: absolute;
+  top: 30px;
+  left: 78px;
+  z-index: 5000;
+}
+
+#sidebar #lingkaran {
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  margin-top: -250px;
+  background-color: blue;
+}
+#check:checked ~ #sidebar {
+  right: 0;
+}
+
+#sidebar .dalist {
+  position: absolute;
+  z-index: 5003;
+  width: 300px;
+  height: 400px;
+  top: 230px;
+  left: 23px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+}
+
+#sidebar .dalist .dompet a {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  background-color: cornsilk;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+#sidebar .dalist .dompet a * {
+  padding-left: 10px;
+}
+
+#sidebar .dalist .menu-akun {
+  display: flex;
+  justify-content: flex-start;
+  align-content: center;
+  flex-direction: column;
+  border-radius: 10px;
+  background-color: cornsilk;
+  margin-bottom: 10px;
+}
+
+#sidebar .dalist .menu-akun .menu-akun-detail a {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  height: 40px;
+  border-radius: 10px;
+}
+
+#sidebar .dalist .menu-akun .menu-akun-detail a:hover {
+  background-color: rgb(81, 107, 94);
+  color: white;
+}
+
+#sidebar .dalist .menu-akun .menu-akun-detail a * {
+  padding-left: 10px;
+}
+
+#sidebar .dalist .menu-helper {
+  display: flex;
+  justify-content: flex-start;
+  align-content: center;
+  flex-direction: column;
+  border-radius: 10px;
+  background-color: cornsilk;
+}
+
+#sidebar .dalist .menu-helper .menu-helper-detail a {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-radius: 10px;
+  height: 40px;
+}
+
+#sidebar .dalist .menu-helper .menu-helper-detail a:hover {
+  background-color: rgb(81, 107, 94);
+  color: white;
+}
+
+#sidebar .dalist .menu-helper .menu-helper-detail a * {
+  padding-left: 10px;
+}
+
+#sidebar {
+  display: block;
+}
+
+/* selesai transmigrasi */
+
+/* Swiper */
+.swiper-container {
+  width: 100%;
+  height: 50vh;
+}
+
+.harga{
+  display: flex; 
+  justify-content: space-between;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.zoom-effect {
+  transition: 0.7s;
+}
+
+.zoom-effect:hover {
+  transform: scale(2);
+}
+
+/* detail produk button */
+
+.tablink {
+  background-color: #555;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 25%;
+}
+
+.tablink:hover {
+  background-color: #777;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+  color: white;
+  display: none;
+  padding: 100px 20px;
+  height: 350px;
+}
+
+/*#Home {
+  background-color: #3CD62E;
+}
+#News {
+  background-color: #3CD62E;
+}
+#Contact {
+  background-color: #3CD62E;
+}
+#About {
+  background-color: #3CD62E;
+}
+*/
+/* selesai button detail produk */
